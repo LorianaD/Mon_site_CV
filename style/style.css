@@ -149,3 +149,78 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+/* Section du profile */
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePhotoContainer {
+    width: 50%;
+    margin: 2%;
+}
+
+.profilePhoto{
+    width: 90%;
+    margin: 2% 0% 2% 2%;
+}
+
+.introductionContainer {
+    width: 50%;
+    margin: 2%;
+}
+
+.titleIntroduction {
+    color: rgb(42, 33, 160);
+}
+
+.introduction {
+    text-align: justify;
+    margin: 2% 2% 2% 0;
+}
+
+.btn { 
+    display: inline-block; /* transforme <a> en boîte */
+    width: 200px;
+    height: 35px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50px;
+    position: relative;
+    color: rgb(42, 33, 160);
+    text-decoration: none; /* enlève le soulignement */
+    overflow: hidden; /* cache ce qui dépasse */
+    cursor: pointer; /* change la souris au survol */
+}
+
+/* les deux textes sont centrés au milieu */
+.btnOverlay,
+.btnHover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+/* état initial */
+.btnOverlay {
+    opacity: 1;
+}
+
+.btnHover {
+    opacity: 0;
+}
+
+/* quand on survole .btn, on inverse les opacités */
+.btn:hover .btnOverlay {
+    opacity: 0;
+}
+
+.btn:hover .btnHover {
+    opacity: 1;
+}
+
