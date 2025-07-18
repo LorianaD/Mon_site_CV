@@ -9,16 +9,25 @@
     <body>
         <header>
 
-            <div class="titleContainer">
+            <div class="header__title">
                 <h1>Loriana DIANO</h1>
                 <span>Projet professionnel : Développeuse Web</span>
             </div>
 
-            <nav>
+            <nav class="header__nav">
                 <ul>
-                    <li class="btnnav"><a href="index.html">Accueil</a></li>
-                    <li class="btnnav"><a href="#">Mes projets</a></li>
-                    <li class="btnnav"><a href="contact.html">Me contacter</a></li>
+                    <li class="header__nav_btn header-nav_btnAccueil"><a href="index.html">Accueil</a></li>
+                        <div class="header-nav_btnAccueil_hover">
+                            <ul>
+                                <li><a href="#personalSkills">Mes savoirs personelles</a></li>
+                                <li><a href="#hardSkills">Mes compétences</a></li>
+                                <li><a href="#certificate">Mes certificats</a></li>
+                                <li><a href="#professionalPath">Mon parcours</a></li>
+                                <li><a href="#hobby">Mes loisirs</a></li>
+                            </ul>
+                        </div>
+                    <li class="header__nav_btn"><a href="#">Mes projets</a></li>
+                    <li class="header__nav_btn"><a href="contact.html">Me contacter</a></li>
                 </ul>
             </nav>
 
@@ -68,7 +77,7 @@
                 <h2 class="CVTitle">Curriculum Vitae</h2>
             </section>
 
-            <section class="personalSkills">
+            <section class="personalSkillsSection" id="personalSkills">
 
                 <div class="headerSection">
                 <h3>Mes savoirs</h3> 
@@ -95,7 +104,7 @@
 
                 <div class="personalSkillsContainer">
 
-                    <h4>Langues</h4>
+                    <h4 class="personalSkills_title">Langues</h4>
 
                     <div class="iconlanguages">
 
@@ -126,15 +135,15 @@
 
             </section>
 
-            <section class="section">
+            <section class="ProfessionalSkills">
 
-                <div class="headerSection">
-                    <h3>Compétences</h3>
+                <div class="headerSection" id="hardSkills">
+                    <h3 class="ProfessionalSkills_title">Compétences</h3>
                 </div>
 
                 <div>
                     
-                    <h4>Comptabilité, Secrétaire, Assistanat</h4>
+                    <h4 class="ProSkills_titles">Comptabilité, Secrétaire, Assistanat</h4>
 
                     <ul>
                         <li>Enregistrer des opérations comptables quotidienne</li>
@@ -146,12 +155,12 @@
 
                 <div>
 
-                    <h4>Informatiques</h4>
+                    <h4 class="ProSkills_titles">Informatiques</h4>
 
                     
                     <div>
 
-                        <h5>Microsoft Office</h5>
+                        <h5 class="ProSkills_titlesSkills">Microsoft Office</h5>
 
                         <div class="iconContainer square">
 
@@ -245,7 +254,7 @@
 
                     <div>
 
-                        <h5>Adobe</h5>
+                        <h5 class="ProSkills_titlesSkills">Adobe</h5>
 
                         <div class="iconContainer square">
 
@@ -284,7 +293,7 @@
 
                     <div>
 
-                        <h5>Langages</h5>
+                        <h5 class="ProSkills_titlesSkills">Langages</h5>
                         
                         <div class="iconContainer square">
 
@@ -312,7 +321,7 @@
 
                     <div>
 
-                        <h5>Logiciel de conception graphique en ligne</h5>
+                        <h5 class="ProSkills_titlesSkills">Logiciel de conception graphique en ligne</h5>
 
                         <div class="iconContainer square">
 
@@ -338,7 +347,7 @@
 
             <section class="section">
 
-                <div class="headerSection">
+                <div class="headerSection" id="certificate">
                     <h3>Certificats</h3>
                 </div>
                 
@@ -351,7 +360,7 @@
 
             </section>
 
-            <section class="section">
+            <section class="section" id="professionalPath">
 
                 <div class="headerSection">
                 <h3>Parcours</h3> 
@@ -439,7 +448,7 @@
 
             </section>
 
-            <section class="section">
+            <section class="section" id="hobby">
 
                 <div class="headerSection">
                     <h3>Centres d'intérêt</h3>
@@ -522,9 +531,9 @@
             </section>
 
         </main>
-        <footer>
+        <footer class="site_footer">
 
-            <div class="titleContainer columne1">
+            <div class="footer__title columne1">
                 <h1>Loriana DIANO</h1>
                 <span>Projet professionnel : Développeuse Web</span>
             </div>
@@ -548,13 +557,13 @@
                     <span>Suivre</span>
                     <div class="followMeIconsContainers">
                         <div class="socialeIcon">
-                            <a href=""><img src="../img/reseaux_sociaux/logo-linkedin.png" alt="icon de linkedin" class="imgSocialIncon"></a>
+                            <a href="https://www.linkedin.com/in/loriana-diano-33187ba8/?originalSubdomain=fr"><img src="../img/reseaux_sociaux/logo-linkedin.png" alt="icon de linkedin" class="imgSocialIncon"></a>
                         </div>
                         <div class="socialeIcon">
-                            <a href=""><img src="../img/reseaux_sociaux/logo-instagram.png" alt="icon de instagram" class="imgSocialIncon"></a>
+                            <a href="https://www.instagram.com/lorianadianopro/"><img src="../img/reseaux_sociaux/logo-instagram.png" alt="icon de instagram" class="imgSocialIncon"></a>
                         </div>
                         <div class="socialeIcon">
-                            <a href=""><img src="../img/reseaux_sociaux/icon_github.png" alt="icon de GitHub" class="imgSocialIncon"></a>
+                            <a href="https://github.com/LorianaD"><img src="../img/reseaux_sociaux/icon_github.png" alt="icon de GitHub" class="imgSocialIncon"></a>
                         </div>
                     </div>
                 </div>

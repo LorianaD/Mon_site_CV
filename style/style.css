@@ -26,7 +26,9 @@ img {
     width: 100%;
 }
 
-/* En tête */
+/**************************************************
+EN TETE
+**************************************************/
 
 /* header {
     
@@ -39,7 +41,7 @@ img {
 
 h1 {
     font-size: 3em;
-    font-style: bold;
+    font-weight: bold;
 }
 
 span {
@@ -69,12 +71,32 @@ nav > ul > li {
     margin: 0 1% 0 1%;
 }
 
-.btnnav a {
+.header__nav_btn a {
     color: rgb(255, 255, 255);
     font-size: 150%;
 }
 
-/* Pied de page */
+.header-nav_btnAccueil{
+    position: relative;
+}
+
+.header-nav_btnAccueil_hover {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    background-color: rgba(225, 226, 255, 0.4);
+    height: 100px;
+    padding: 20px 10px 0 10px;
+    opacity: 0;
+}
+
+.header-nav_btnAccueil_hover:hover {
+    opacity: 1;
+}
+
+/*************************************************
+PIED DE PAGE
+*************************************************/
 
 footer {
     bottom: 0;
@@ -131,7 +153,9 @@ footer {
     align-items: center;
 }
 
-/* Corp */
+/***************************************************
+CORPS
+***************************************************/
 
 main {
     background-color: rgba(255, 255, 255, 0.9);
@@ -146,12 +170,21 @@ main {
     bottom: 15%;
 }
 
-/* Sections */
+/* Sections : Genéral */
 
 section {
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.headerSection {
+    border-top: 3px rgb(42, 33, 160) solid;
+    border-bottom: 3px rgb(42, 33, 160) solid;
+    color: rgb(42, 33, 160);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2%;
 }
 
 /* Section du profile */
@@ -240,21 +273,6 @@ section {
 .CVTitle {
     margin: auto 2%;
     font-size: 50px;
-}
-
-/*section*/
-
-section {
-    width: auto;
-}
-
-.headerSection {
-    border-top: 3px rgb(42, 33, 160) solid;
-    border-bottom: 3px rgb(42, 33, 160) solid;
-    color: rgb(42, 33, 160);
-    font-size: 40px;
-    font-weight: bold;
-    padding: 2%;
 }
 
 /* Images */
