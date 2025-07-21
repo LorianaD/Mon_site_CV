@@ -293,6 +293,7 @@ section {
 
 .iconContainer { /*elle va etre utilisé pour toutes les div qui contienne une icon et son hover*/
     position: relative;
+    margin: 10px 20px;
 }
 
 .iconHover {
@@ -335,3 +336,11 @@ section {
     color: rgb(131, 0, 0);
 }
 
+/* Compétences Professionel */
+
+.ProSkills_sofward-icon {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 2%;
+}
